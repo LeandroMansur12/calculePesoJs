@@ -11,12 +11,13 @@ var botao = document.getElementById("btn");
 botao.addEventListener("click", function(event){
 	event.preventDefault();
 
+//buscando o formulario no html.
 	var form = document.getElementById("formPrincipal");
-
+//buscando o resultado 
 	var cliente = infoFomulario(form); 
 
 	
-
+//defenindo o resultado da formula.
 	var imc =document.querySelector(".tdImc");
 	imc.textContent=cliente.imc;
 	
